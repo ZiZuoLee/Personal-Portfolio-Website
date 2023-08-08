@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d44d5a9c76.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Rookie Programmer<br><br><br></p>
+            <h1>Hi, I'm <span id="name">Zi Zuo</span> <br>From <span id="school"> Fudan University</span> </h1>
+        </div>
+    </div>
+
+</div>
+<!-----------------------------about--------------------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Javascript - HTML - CSS</span><br>-Build Responsive Webstie</li>
+                        <li><span>Python</span><br>-Discord Bot<br>-Simple Quiz Game</li>
+                        <li><span>C/C++</span><br>-Simple Projects</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023 - Current</span><br>Solving Leetcode & Learning Algorithms</li>
+                        <li><span>2023</span><br>Build Own Responsive Website/Portfolio</li>
+                        <li><span>2022</span><br>Qualified in National Programming Workshop/Competition</li>
+                        <li><span>2021 - 2022</span><br>Build & Maintain Discord Bot</li>                       
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023 - Current</span><br>Fudan University Computer Science Degree</li>
+                        <li><span>2017 - 2022</span><br>Foon Yew High School</li> 
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------------------------------services------------------------------------>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-regular fa-pen-to-square fa-beat fa-lg"></i>
+                <h2>Responsive Website</h2>
+                <p>Want to have your own website? No worries I can get you a responsive website like this website you are seeing now!</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-discord fa-beat fa-lg"></i>
+                <h2>Discord Bot</h2>
+                <p>Always want to have a customizable/simple Discord Bot in your own server? Let me build you one simple chat bot 
+                    with some general functions!
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-python fa-beat fa-lg"></i>
+                <h2>Python-Based Project</h2>
+                <p>Need to get rid of some tricky Python Projects or Leetcode Problems? Giving you the best guides to help you solve these 
+                    difficult matters!
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------------------------------portfolio------------------------------------>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Life</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Programming</h3>
+                    <p>Daily basis~ Always try to do something new !</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Music</h3>
+                    <p>The best way to entertain yourself is listen to music !</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Sports</h3>
+                    <p>Not only swimming ! I also play a lot of basketball, football etc...</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn"> See more</a>
+    </div>
+</div>
+
+<!--------------------------------contact------------------------------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me!</h1>
+                <p><i class="fa-regular fa-paper-plane"></i>zizuolee@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>+601282821175</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/zizuo.lee/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/zizuolee/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/channel/UCCUWgUADvMHmvSjqH8oUHTw"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <a href="images/复旦大学自述书.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Lee Zi Zuo.<i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<script src="fucntions.js"></script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwkRob0Ca3o6yKekYLwjRygNaHsTaoy54qwoGaTKmV1fBHwxmWyZyjP2vA9aZHN2ATa/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = 'Message sent successfully'
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },1000)
+            form.reset()
+        })
+        .catch(error => {
+            msg.innerHTML = 'Message sent unsucessfully'
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },1000)
+        })
+    })
+  </script>
+</body>
+</html>
